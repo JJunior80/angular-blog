@@ -4,7 +4,6 @@ import { dataFake } from '../../data/dataFake';
 
 @Component({
   selector: 'app-content',
-  standalone: true,
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.css']
 })
