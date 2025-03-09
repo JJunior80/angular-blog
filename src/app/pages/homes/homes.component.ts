@@ -1,13 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { BigCardComponent } from "../../components/big-card/big-card.component";
 import { MenuTitleComponent } from "../../components/menu-title/menu-title.component";
 
-
 @Component({
-  selector: 'app-homes',
-  imports: [MenuTitleComponent],
+  selector: 'app-home',
   templateUrl: './homes.component.html',
-  styleUrl: './homes.component.css'
+  styleUrls: ['./homes.component.css'],
+  imports: [BigCardComponent, MenuTitleComponent]
 })
-export class HomesComponent {
+export class HomeComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
 
 }
