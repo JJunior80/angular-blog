@@ -1,6 +1,6 @@
 ---
 
-## 📄 **Angular Blog**  
+## 📄 ** README.md - Angular Blog**  
 
 ```md
 # 🚀 **Criando seu Blog com Angular**  
