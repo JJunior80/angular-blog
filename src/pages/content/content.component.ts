@@ -28,7 +28,8 @@ export class ContentComponent implements OnInit {
   }
 
   setValuesToComponent(id: number) {
-    const result = dataFake.find(article => article.id === id.toString()); // ✅ Converte o id para string antes da comparação
+    const result = dataFake.find(article => Number(article.id) === id);
+
   
     if (result) {
       this.contentTitle = result.title;
