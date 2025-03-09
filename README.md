@@ -1,6 +1,6 @@
 ---
 
-## 📄 **README.md - Angular Blog**  
+## 📄 **Angular Blog**  
 
 ```md
 # 🚀 **Criando seu Blog com Angular**  
@@ -364,3 +364,4 @@ Este projeto está sob a **Licença MIT**.
 ✨ **Desenvolvido por [Seu Nome](https://github.com/seuUsuario)**  
 ```  
 
+# angular-blog
