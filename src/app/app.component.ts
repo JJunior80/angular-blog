@@ -5,7 +5,8 @@ import { MenuBarComponent } from "./components/menu-bar/menu-bar.component";
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [MenuBarComponent]
+  
+  imports: [MenuBarComponent],
 })
 export class AppComponent {
   title = 'my-app';
