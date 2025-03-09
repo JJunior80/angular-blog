@@ -2,15 +2,16 @@
 
   <div class="container__small-card-content">
     <div class="small-card__photo">
-      <img
-        src="{{ photoCover }}"
-        alt=""
-        srcset=""
-      >
+      <img [src]="photoCover" *ngIf="photoCover" alt="Imagem">
+
     </div>
 
     <div class="small-card__title">
-      <h1><a []="['content', Id]" >{{ cardTitle }}</a></h1>
+      <h1>
+        <a [id]="['/my-app/src/pages/content', Id]">{{ cardTitle }}</a>
+      </h1>
+      
+
     </div>
   </div>
 

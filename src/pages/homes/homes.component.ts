@@ -5,6 +5,7 @@ import { MenuTitleComponent } from "../../components/menu-title/menu-title.compo
 
 @Component({
   selector: 'app-home',
+  standalone: true,
   templateUrl: './homes.component.html',
   styleUrls: ['./homes.component.css'],
   imports: [BigCardComponent, SmallCardComponent, MenuTitleComponent]
