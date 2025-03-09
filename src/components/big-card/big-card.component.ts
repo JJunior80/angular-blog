@@ -14,15 +14,15 @@ export class BigCardComponent implements OnInit {
   cardTitle:string= ""
   @Input()
   cardDescription:string =""
-  @Input()
   @Input() Id!: number;  // ✅ Agora Id é um número
 
 
 
   constructor() { }
   ngOnInit(): void {
-    this.Id = Number(this.Id);  // 🔥 Converte se vier como string
+    this.Id = Number(this.Id) || 0;  // ✅ Garante que nunca será undefined
   }
+  
   
 
 }

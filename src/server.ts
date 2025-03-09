@@ -41,12 +41,16 @@ import {
    * Handle all other requests by rendering the Angular application.
    */
   app.use('/**', (req, res, next) => {
+    console.log(`Recebendo requisição: ${req.url}`);
     angularApp
       .handle(req)
       .then((response) =>
         response ? writeResponseToNodeResponse(response, res) : next(),
       )
-      .catch(next);
+      .catch(err => {
+        console.error("Erro ao processar SSR:", err);
+        next();
+      });
   });
   
   /**

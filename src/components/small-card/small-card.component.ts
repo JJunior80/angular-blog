@@ -20,8 +20,9 @@ export class SmallCardComponent implements OnInit {
 
   constructor() { }
   ngOnInit(): void {
-    this.Id = Number(this.Id);  // 🔥 Converte se vier como string
+    this.Id = Number(this.Id) || 0;  // ✅ Garante que nunca será undefined
   }
+  
   
 
 }

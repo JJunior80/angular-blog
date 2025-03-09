@@ -4,12 +4,13 @@
   </div>
 
   <div class="big-card__title">
-    <h1><a [id]="" ]="['/my-app/src/pages/content', Id]">{{ cardTitle }}</a></h1>  <!-- ✅ Correto -->
+    <h1><a [routerLink]="['/content', Id]">{{ cardTitle }}</a></h1>
+
   </div>
 
   <div class="big-card__description">
     <p>
-      <a [id]="['/my-app/src/pages/content', Id]">  <!-- ✅ Correto -->
+      <a [routerLink]="['/content', Id]">{{ cardTitle }}>  <!-- ✅ Correto -->
         {{ cardDescription }}
       </a>
     </p>
