@@ -7,7 +7,7 @@ import { BigCardComponent } from './components/big-card/big-card.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MenuTitleComponent],
+  imports: [RouterOutlet, HomesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
